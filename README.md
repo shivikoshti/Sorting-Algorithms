@@ -5,9 +5,7 @@ This repository provides implementations and explanations for three fundamental 
 ## 1. Bubble Sort
 
 Bubble Sort is a simple comparison-based sorting algorithm. The main idea is to repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order. The process is repeated for every element until no swaps are needed.
-
-![Bubble Sort Illustration]([link_to_your_bubble_sort_image](https://www.simplilearn.com/ice9/free_resources_article_thumb/Bubble-Sort-Algorithm-Soni/working-of-bubble-sort-algorithm1png.png))
-
+![image](https://www.productplan.com/uploads/bubble-sort-1024x683-2.png)</br>
 ### How it works:
 - Start from the first element and compare it with the next one.
 - If the first element is greater than the next one, swap them.
@@ -18,8 +16,7 @@ Bubble Sort is a simple comparison-based sorting algorithm. The main idea is to 
 ## 2. Insertion Sort
 
 Insertion Sort builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
-
-![Insertion Sort Illustration](link_to_your_insertion_sort_image)
+![image](https://www.codingeek.com/wp-content/uploads/2016/06/Insertion-Sort-and-its-implementation.png)</br>
 
 ### How it works:
 - Start from the second element (consider the first element as sorted).
@@ -31,7 +28,7 @@ Insertion Sort builds the final sorted array one item at a time. It is much less
 
 Selection Sort is a comparison-based sorting algorithm. The main idea behind the algorithm is to divide the input list into two parts: a sorted sublist and an unsorted sublist. The algorithm repeatedly selects the smallest (or largest) element from the unsorted sublist and moves it to the end of the sorted sublist.
 
-![Selection Sort Illustration](link_to_your_selection_sort_image)
+![image](https://www.simplilearn.com/ice9/free_resources_article_thumb/Selection-Sort-Soni/what-is-selection-sort.png)</br>
 
 ### How it works:
 - Start with the first element as the minimum.
