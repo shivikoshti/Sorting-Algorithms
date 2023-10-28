@@ -6,7 +6,7 @@ This repository provides implementations and explanations for three fundamental 
 
 Bubble Sort is a simple comparison-based sorting algorithm. The main idea is to repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order. The process is repeated for every element until no swaps are needed.
 
-![Bubble Sort Illustration](link_to_your_bubble_sort_image)
+![Bubble Sort Illustration]([link_to_your_bubble_sort_image](https://www.simplilearn.com/ice9/free_resources_article_thumb/Bubble-Sort-Algorithm-Soni/working-of-bubble-sort-algorithm1png.png))
 
 ### How it works:
 - Start from the first element and compare it with the next one.
