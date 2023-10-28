@@ -1,122 +1,40 @@
-# Sorting
+# Sorting Algorithms
 
-## **THEORY**
+This repository provides implementations and explanations for three fundamental sorting algorithms: Bubble Sort, Insertion Sort, and Selection Sort. Each algorithm is explained with the help of diagrams and brief descriptions.
 
-A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+## 1. Bubble Sort
 
-- **Selection Sort**
+Bubble Sort is a simple comparison-based sorting algorithm. The main idea is to repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order. The process is repeated for every element until no swaps are needed.
 
-In selection sorting technique, the smallest element is fetched by comparing itself with the rest of the elements and sorted at the array's first position. The complete array is divided into two halves, the sorted subarray on the left and the unsorted subarray on the right. Once the first element is sorted, the search for the second minimum element begins from the rest of the array and is positioned at second place.
+![Bubble Sort Illustration](link_to_your_bubble_sort_image)
 
-![image](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/37f41260-a272-4616-8e96-a39223730def)
+### How it works:
+- Start from the first element and compare it with the next one.
+- If the first element is greater than the next one, swap them.
+- Move to the next element and repeat the process until the end of the list is reached.
+- After the first pass, the largest element will have "bubbled up" to the last position.
+- Repeat the process, excluding the last element, and continue doing this until no more swaps are needed.
 
-Similarly, all the elements are positioned on the sorted side of the subarray one after the other, and the complete array becomes a sorted array.
+## 2. Insertion Sort
 
-- **Insertion Sort**
+Insertion Sort builds the final sorted array one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
 
-In this sorting technique, the elements are sorted by comparing the elements with their previous elements. It starts by comparing the second element with the first element. If the second element is smaller than the first, then we will swap it.
+![Insertion Sort Illustration](link_to_your_insertion_sort_image)
 
-![image](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/4f70a340-1bc8-41e2-99fd-14a8d8e2e82f)
+### How it works:
+- Start from the second element (consider the first element as sorted).
+- Compare the current element with the previous elements.
+- If the current element is smaller than the previous one, compare it with the elements before the previous one. Continue this process until you reach an element smaller than the current element or reach the start of the array.
+- Insert the current element in the correct position so that the elements before are smaller than the current element and the elements after are bigger.
 
-After that, we will compare the third element with all the elements that are before it. Similarly, it goes for the fourth element and so on. Once all the comparisons are made, the elements become sorted. 
+## 3. Selection Sort
 
-- **Bubble Sort**
+Selection Sort is a comparison-based sorting algorithm. The main idea behind the algorithm is to divide the input list into two parts: a sorted sublist and an unsorted sublist. The algorithm repeatedly selects the smallest (or largest) element from the unsorted sublist and moves it to the end of the sorted sublist.
 
-Bubble sort is one of the most straightforward sorting algorithms. In this sorting technique, we begin by comparing the first two elements of the array and checking if the first element is greater than the second element; if it is, we will swap those elements and move forward to the next element. 
+![Selection Sort Illustration](link_to_your_selection_sort_image)
 
-![image](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/69881323-4509-4959-bdc7-0afedb21a639)
-
-
-If the first element is not greater than the second, then we don’t need to swap it. And this process will keep on repeating till the end of the array.
-
-![image](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/52ac6ac4-03c6-4fdc-83df-e35e963c9b20)
-
-# Experiment_1:
-
-* Aim: Algorithm for the provided C++ program that sorts an array using Selection Sort
-
-* Algorithm: 
-
-1.Start
-
-2.Declare an integer variable n to store the number of elements in the array.
-
-Output "Enter the number of elements in the array: " to prompt the user for input.
-
-Read the value of n from the user.
-
-3.Declare an integer array arr of size n to store the elements of the array.
-
-Output "Enter n elements of the array: " to prompt the user for the array elements.
-
-Use a loop to read and store the n elements in the arr array.
-
-4. Create a function to perform selection sort
-
-5.Use a loop to display the elements of the sorted arr array.
-
-6.Stop
-
-### **OUTPUT**
-
-![Exp22_1](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/eb5de79e-4cac-4b81-8749-a47226daa84c)
-
-# Experiment_2:
-
-* Aim: Algorithm for the provided C++ program that sorts an array using Insertion Sort
-
-* Algorithm: 
-
-1.Start
-
-2.Declare an integer variable n to store the number of elements in the array.
-
-Output "Enter the number of elements in the array: " to prompt the user for input.
-
-Read the value of n from the user.
-
-3.Declare an integer array arr of size n to store the elements of the array.
-
-Output "Enter n elements of the array: " to prompt the user for the array elements.
-
-Use a loop to read and store the n elements in the arr array.
-
-4. Create a function to perform insertion sort
-
-5.Use a loop to display the elements of the sorted arr array.
-
-6.Stop
-
-### **OUTPUT**
-
-![exp22_2](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/0b85f36e-0942-47a9-8e0d-c728cd43b0ce)
-
-# Experiment_3:
-
-* Aim: Algorithm for the provided C++ program that sorts an array using Bubble Sort
-
-* Algorithm: 
-
-1.Start
-
-2.Declare an integer variable n to store the number of elements in the array.
-
-Output "Enter the number of elements in the array: " to prompt the user for input.
-
-Read the value of n from the user.
-
-3.Declare an integer array arr of size n to store the elements of the array.
-
-Output "Enter n elements of the array: " to prompt the user for the array elements.
-
-Use a loop to read and store the n elements in the arr array.
-
-4. Create a function to perform bubble sort
-
-5.Use a loop to display the elements of the sorted array.
-
-6.Stop
-
-### **OUTPUT**
-
-![exp22_3](https://github.com/Purvansha022609/Sorting-Algorithm/assets/139473344/59fe445b-8f40-43ad-ae42-2168ec1b54f0)
+### How it works:
+- Start with the first element as the minimum.
+- Search for the smallest element in the unsorted sublist and swap it with the first element.
+- Move the boundary between the sorted and unsorted sublists one element to the right.
+- Repeat the process until the entire list is sorted.
